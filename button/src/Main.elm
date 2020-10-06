@@ -52,9 +52,9 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ button [ onClick Decrement ] [ Html.text "Decrement" ]
-        , div [] [ Html.text (String.fromInt model.current) ]
-        , button [ onClick Increment ] [ Html.text "Increment" ]
+        [ button [ onClick Decrement ] [ text "Decrement" ]
+        , div [] [ text (String.fromInt model.current) ]
+        , button [ onClick Increment ] [ text "Increment" ]
         , button [ onClick Reset ] [ text "Reset" ]
         , div []
             [ button [ onClick IncreStep ] [ text "step add" ]
